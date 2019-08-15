@@ -174,10 +174,7 @@ fun_get_version(){
         [ -x ${ver_file} ] && chmod +x ${ver_file}
         . ${ver_file}
     fi
-    if [ -z ${FRPS_INIT} ] || [ -z ${github_download_url} ]; then
-        echo -e "${COLOR_RED}Error: ${COLOR_END}Get Program version failed!"
-        exit 1
-    fi
+  
 }
 fun_getServer(){
     def_server_url="aliyun"
